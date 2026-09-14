@@ -41,11 +41,6 @@ with `†` (corresponding) or `*` (equal contribution) right after the name.
 
 Paste a real URL in and the link appears. Leave it as `#` and nothing shows.
 
-### Google Scholar
-
-The Scholar link in the header is commented out. Put your user ID into its `href` and remove the
-comment markers around it.
-
 ### The e-mail address
 
 The header shows the address as a Python expression, not a link:
