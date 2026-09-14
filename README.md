@@ -1,7 +1,7 @@
-# clearloveclearlove.github.io
+# biao-yi.github.io
 
 Academic homepage of Biao Yi, Lecturer at East China University of Science and Technology.
-Live at <https://clearloveclearlove.github.io>.
+Live at <https://biao-yi.github.io>.
 
 A single static page: no build step, no dependencies, no web fonts. Styled after
 [xuandongzhao.github.io](https://xuandongzhao.github.io/).
