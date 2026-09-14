@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biao Yi</title>
+<meta name="description" content="Biao Yi — Lecturer at East China University of Science and Technology, working on the safety and trustworthiness of large language models.">
+<style>
+html{ background-color:#eeeeee; }
+
+body{
+  font-family: Optima, Candara, Calibri, "Segoe UI", Arial, sans-serif;
+  color:#000;
+  background-color:#ffffff;
+  font-size:16px;
+  line-height:1.42;
+  text-align:left;
+  margin:30px auto;
+  padding:10px 50px 30px;
+  max-width:960px;
+}
+
+a, a:link, a:visited{ color:#224b8d; text-decoration:none; }
+a:hover{ color:#527bbd; text-decoration:underline; }
+a:focus-visible{ outline:2px solid #527bbd; outline-offset:2px; }
+
+img{ border:0; }
+p{ margin:0 0 10px; }
+p:last-child{ margin-bottom:0; }
+
+h2{
+  font-family:inherit;
+  font-size:24px;
+  font-weight:700;
+  margin:26px 0 0;
+  line-height:1.25;
+}
+hr{
+  border:0;
+  border-top:1px solid #aaaaaa;
+  margin:6px 0 14px;
+}
+
+/* ---------- header ---------- */
+.hdr{ display:flex; gap:26px; align-items:flex-start; margin-bottom:4px; }
+.hdr img, .hdr .noimg{ width:130px; flex:0 0 130px; display:block; }
+.hdr .noimg{
+  height:156px; background:#f0f0f0; border:1px solid #ccc;
+  display:flex; align-items:center; justify-content:center;
+  font-size:40px; color:#888;
+}
+.hdr h2{ margin:0 0 8px; }
+.contact{ margin:0 0 3px; }
+.contact b{ font-weight:700; }
+.profiles{ margin-top:9px; }
+.profiles span{ color:#999; margin:0 5px; }
+
+/* ---------- about ---------- */
+.areas{ margin:10px 0 0; padding:0; list-style:none; }
+.areas li{ margin-bottom:5px; }
+.areas b{ font-weight:700; }
+
+/* ---------- publications ---------- */
+.legend{ color:#666; font-size:14px; margin:-4px 0 12px; }
+.pub{ margin-bottom:13px; line-height:1.36; }
+.pub .t{ margin:0; font-weight:700; }
+.pub .t .lnk{ font-weight:400; }
+.pub .a{ margin:0; }
+.pub .v{ margin:0; font-style:italic; }
+.pub .a u{ text-decoration:underline; }
+/* A [Paper]/[Code] link stays hidden until its href="#" is replaced with a real URL. */
+.lnk[href="#"]{ display:none; }
+
+.mail{
+  font-family:"SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size:14px; color:#333; background:#f4f4f4;
+  padding:1px 5px; border-radius:2px;
+}
+.recruit{ color:#224b8d; font-weight:700; }
+
+/* ---------- entries (education, experience) ---------- */
+.entry{ margin-bottom:13px; }
+.entry .where{ font-weight:700; margin:0; }
+.entry .what{ margin:0; }
+.entry .note{ margin:0; color:#333; }
+
+/* ---------- service ---------- */
+.svc{ margin-bottom:6px; }
+.svc b{ font-weight:700; }
+
+/* ---------- footer ---------- */
+.foot{ margin-top:30px; color:#777; font-size:14px; }
+
+@media (max-width:700px){
+  body{ margin:0 auto; padding:18px 20px 28px; font-size:15px; }
+  .hdr{ flex-direction:column; gap:16px; }
+  h2{ font-size:21px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<div class="hdr">
+  <img src="assets/profile.jpg" alt="Biao Yi"
+       onerror="this.outerHTML='&lt;div class=&quot;noimg&quot; aria-hidden=&quot;true&quot;&gt;BY&lt;/div&gt;'">
+  <div>
+    <h2>Biao Yi</h2>
+    <p class="contact"><b>Position:</b> Lecturer, School of Information Science and Engineering</p>
+    <p class="contact"><b>Affiliation:</b> East China University of Science and Technology</p>
+    <p class="contact"><b>E-mail:</b> <code class="mail">"biaoyi" + "@" + "ecust.edu.cn"</code></p>
+    <p class="contact"><b>Address:</b> 130 Meilong Road, Xuhui District, Shanghai 200237, China</p>
+    <p class="profiles">
+      <!-- Google Scholar: put your user ID into the href below and remove these comment markers to show it.
+      <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID">Google Scholar</a><span>/</span>
+      -->
+      <a href="https://github.com/clearloveclearlove">GitHub</a>
+    </p>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<h2>What I work on</h2>
+<hr>
+<p>
+  My research is on the <i>safety and trustworthiness of large language models</i>. Two questions run through
+  it: how do you keep a model from being turned harmful — by a jailbreak, a planted backdoor, or fine-tuning on
+  harmful data — and how do you verify what a model gives back, by reading its internal states, tracing
+  corrupted knowledge to its source, and marking what belongs to whom. Earlier work in linguistic steganography
+  and steganalysis set the recurring theme: what can be hidden inside text, and how it can be found.
+  <b class="recruit">I am building a group around these questions at ECUST and am looking for students and
+  interns to join it.</b>
+</p>
+<ul class="areas">
+  <li><b>Alignment</b> — safety alignment under attack: jailbreaks and harmful fine-tuning.</li>
+  <li><b>Backdoors</b> — backdoor and poisoning attacks on LLMs, and defenses against them.</li>
+  <li><b>Hallucination</b> — detecting and mitigating LLM hallucination.</li>
+  <li><b>Privacy &amp; IP</b> — membership inference, training-data auditing, and watermarking for models.</li>
+  <li><b>Steganography</b> — linguistic steganography and steganalysis.</li>
+</ul>
+
+<!-- ============ PUBLICATIONS ============ -->
+<!--
+  Each [Paper] / [Code] link is hidden while its href is "#". Paste a real URL in and the
+  link appears; leave it as "#" and nothing shows. Nothing to delete either way.
+-->
+<h2>Publications</h2>
+<hr>
+<p class="legend">† corresponding author &nbsp;·&nbsp; * equal contribution</p>
+
+<div class="pub">
+  <p class="t">Hiding in Plain Sight: A Steganographic Approach to Stealthy LLM Jailbreaks <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Jianing Geng*, <u>Biao Yi</u>*, Zekun Fei, Ruiqi He, Lihai Nie, Tong Li, Zheli Liu</p>
+  <p class="v">EMNLP 2026 (Findings)</p>
+</div>
+
+<div class="pub">
+  <p class="t">CTRAP: Embedding Collapse Trap to Safeguard Large Language Models from Harmful Fine-Tuning <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Tiansheng Huang, Baolei Zhang, Tong Li, Lihai Nie, Zheli Liu, Li Shen</p>
+  <p class="v">ACL 2026</p>
+</div>
+
+<div class="pub">
+  <p class="t">SEAD: A Surrogate-free Label-only Membership Inference Attack against Pre-trained LLMs with Semantic-Aware Density <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Jiahao Li, Yiming Li, Yu He, Baolei Zhang, Zheli Liu, Dacheng Tao</p>
+  <p class="v">ACL 2026 (Findings)</p>
+</div>
+
+<div class="pub">
+  <p class="t">Who Taught the Lie? Responsibility Attribution for Poisoned Knowledge in Retrieval-Augmented Generation <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Baolei Zhang, Haoran Xin, Yuxi Chen, Zhuqing Liu, <u>Biao Yi</u>, Tong Li, Lihai Nie, Zheli Liu, Minghong Fang</p>
+  <p class="v">IEEE S&amp;P 2026</p>
+</div>
+
+<div class="pub">
+  <p class="t">BadReasoner: Planting Tunable Overthinking Backdoors into Large Reasoning Models for Fun or Profit <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Zekun Fei, Jianing Geng, Tong Li, Lihai Nie, Zheli Liu, Yiming Li</p>
+  <p class="v">ICASSP 2026 (Oral)</p>
+</div>
+
+<div class="pub">
+  <p class="t">SafeGrad: Gradient Surgery for Safe LLM Fine-Tuning <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Jiahao Li, Baolei Zhang, Lihai Nie, Tong Li, Tiansheng Huang, Zheli Liu</p>
+  <p class="v">ICASSP 2026</p>
+</div>
+
+<div class="pub">
+  <p class="t">Practical Framework for Privacy-Preserving and Byzantine-Robust Federated Learning <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Baolei Zhang, Minghong Fang, Zhuqing Liu, <u>Biao Yi</u>, Peng Zhou, Yan Wang, Tong Li, Zheli Liu</p>
+  <p class="v">IEEE TIFS 2026</p>
+</div>
+
+<div class="pub">
+  <p class="t">Your Semantic-Independent Watermark is Fragile: A Semantic Perturbation Attack against EaaS Watermark <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Zekun Fei*, <u>Biao Yi</u>*, Jianing Geng, Ruiqi He, Lihai Nie, Zheli Liu</p>
+  <p class="v">EMNLP 2025 (Findings)</p>
+</div>
+
+<div class="pub">
+  <p class="t">Prompt-Guided Internal States for Hallucination Detection of Large Language Models <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Fujie Zhang, Peiqi Yu, <u>Biao Yi</u>†, Baolei Zhang, Tong Li, Zheli Liu</p>
+  <p class="v">ACL 2025</p>
+</div>
+
+<div class="pub">
+  <p class="t">Traceback of Poisoning Attacks to Retrieval-Augmented Generation <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Baolei Zhang, Haoran Xin, Minghong Fang, Zhuqing Liu, <u>Biao Yi</u>, Tong Li, Zheli Liu</p>
+  <p class="v">WWW 2025</p>
+</div>
+
+<div class="pub">
+  <p class="t">Probe before You Talk: Towards Black-box Defense against Backdoor Unalignment for Large Language Models <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Tiansheng Huang, Sishuo Chen, Tong Li, Zheli Liu, Zhixuan Chu, Yiming Li</p>
+  <p class="v">ICLR 2025</p>
+</div>
+
+<div class="pub">
+  <p class="t">BadActs: A Universal Backdoor Defense in the Activation Space <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Sishuo Chen, Yiming Li, Tong Li, Baolei Zhang, Zheli Liu</p>
+  <p class="v">ACL 2024 (Findings)</p>
+</div>
+
+<div class="pub">
+  <p class="t">Semantic-preserving Linguistic Steganography by Pivot Translation and Semantic-aware Bins Coding <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Tianyu Yang, Hanzhou Wu, <u>Biao Yi</u>, Guorui Feng, Xinpeng Zhang</p>
+  <p class="v">IEEE TDSC 2024</p>
+</div>
+
+<div class="pub">
+  <p class="t">Exploiting Language Model for Efficient Linguistic Steganalysis <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Hanzhou Wu, Guorui Feng, Xinpeng Zhang</p>
+  <p class="v">ICASSP 2022</p>
+</div>
+
+<div class="pub">
+  <p class="t">ALiSa: Acrostic Linguistic Steganography based on BERT and Gibbs Sampling <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a"><u>Biao Yi</u>, Hanzhou Wu, Guorui Feng, Xinpeng Zhang</p>
+  <p class="v">IEEE SPL 2022</p>
+</div>
+
+<div class="pub">
+  <p class="t">Linguistic Steganalysis with Graph Neural Networks <a class="lnk" href="#">[Paper]</a> <a class="lnk" href="#">[Code]</a></p>
+  <p class="a">Hanzhou Wu, <u>Biao Yi</u>, Feng Ding, Guorui Feng, Xinpeng Zhang</p>
+  <p class="v">IEEE SPL 2021</p>
+</div>
+
+<!-- ============ EDUCATION ============ -->
+<h2>Education</h2>
+<hr>
+
+<div class="entry">
+  <p class="where">Nankai University, China</p>
+  <p class="what">Ph.D. &bull; Sept. 2022 - June 2026</p>
+  <p class="note">Advisor: Prof. Zheli Liu, Changjiang Scholar and Dean of the College of Computer Science</p>
+</div>
+
+<div class="entry">
+  <p class="where">Shanghai University, China</p>
+  <p class="what">M.Eng. &bull; Sept. 2019 - June 2022</p>
+  <p class="note">Advisor: Assoc. Prof. Hanzhou Wu, in the group of Prof. Xinpeng Zhang (NSFC Distinguished Young Scholar)</p>
+</div>
+
+<div class="entry">
+  <p class="where">University of South China, China</p>
+  <p class="what">B.Eng. &bull; Sept. 2015 - June 2019</p>
+</div>
+
+<!-- ============ EXPERIENCE ============ -->
+<h2>Experience</h2>
+<hr>
+
+<div class="entry">
+  <p class="where">East China University of Science and Technology, China</p>
+  <p class="what">Lecturer, School of Information Science and Engineering &bull; July 2026 - present</p>
+</div>
+
+<!-- ============ SERVICE ============ -->
+<h2>Academic Service</h2>
+<hr>
+
+<p class="svc"><b>Program Committee:</b> USENIX Security, NeurIPS, ICLR, AAAI, WWW, SIGIR</p>
+<p class="svc"><b>Journal Reviewer:</b> IEEE Transactions on Information Forensics and Security, IEEE Signal Processing Letters</p>
+
+<p class="foot">Last update: Sept. 2026</p>
+
+</body>
+</html>
